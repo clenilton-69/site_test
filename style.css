@@ -1,0 +1,205 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* HEADER */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* SEÇÕES */
+section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+
+/* FORMULÁRIO */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+/* RODAPÉ */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+#ferramentas {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#ferramentas h2 {
+  color: #4a90e2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#ferramentas p {
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+#ferramentas ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#ferramentas li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+body {
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background-image: url('Banner de saúde ment.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+section {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeInUp 1s ease forwards;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 40px 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+.secao-estendida {
+  background-image: url('Banner de saúde ment.png'); /* substitui pelo nome da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 120px 40px;
+  color: white;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.secao-estendida::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* escurece o fundo pra destacar o texto */
+  z-index: 0;
+}
+
+.secao-estendida h2,
+.secao-estendida p {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  font-size: 1.3em;
+  line-height: 1.8;
+}
